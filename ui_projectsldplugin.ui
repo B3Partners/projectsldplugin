@@ -84,7 +84,7 @@
    <item row="4" column="1">
     <widget class="QLabel" name="lbl_workspace">
      <property name="text">
-      <string>Workspace</string>
+      <string>Pad op server</string>
      </property>
     </widget>
    </item>

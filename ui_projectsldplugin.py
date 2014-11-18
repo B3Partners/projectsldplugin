@@ -78,5 +78,5 @@ class Ui_ProjectSldPlugin(object):
         self.cbx_save_as_file.setText(_translate("ProjectSldPlugin", "Opslaan als bestand", None))
         self.btn_filename.setText(_translate("ProjectSldPlugin", "Browse", None))
         self.cbx_post_to_server.setText(_translate("ProjectSldPlugin", "POST naar server", None))
-        self.lbl_workspace.setText(_translate("ProjectSldPlugin", "Workspace", None))
+        self.lbl_workspace.setText(_translate("ProjectSldPlugin", "Pad op server", None))
 

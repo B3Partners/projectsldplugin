@@ -38,8 +38,6 @@ import config
 import requests
 from requests.auth import HTTPBasicAuth
 
-#http://localhost/cgi-bin/mapserv?map=/usr/lib/cgi-bin/b3p.map&&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=4386.87996086938073859,304945.87847349571529776,286086.88017670798581094,621081.30985224642790854&CRS=EPSG:28992&WIDTH=388&HEIGHT=435&LAYERS=provincies,autowegen,plaatsen&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&sld=http://localhost/b3p.sld
-
 class ProjectSldPlugin:
 
     def __init__(self, iface):
@@ -232,7 +230,7 @@ class ProjectSldPlugin:
                 self.iface.messageBar().pushMessage("Info", "Sld succesvol verstuurd... ", level=QgsMessageBar.INFO, duration=2)
                 sldurl = r.text
                 QMessageBox.information(self.iface.mainWindow(), "Sld", 
-                    ("Gebruik onderstaande url in Kaartenbalie:\n\n" + sldurl +
+                    ("Gebruik onderstaande url voor ophalen SLD:\n\n" + sldurl +
                     "\n"), QMessageBox.Ok, QMessageBox.Ok)
             else:
                 self.iface.messageBar().pushMessage("Fout", 

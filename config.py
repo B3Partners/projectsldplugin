@@ -1,4 +1,3 @@
-
 replace = {
     '.svg':'.png',
     # windows
@@ -15,12 +14,11 @@ replace = {
 }
 
 params = {
-    'post-url':'http://192.168.1.19:8084/kaartenbalie/api/foo',
-    'post-username':'richard',
-    'post-password':'geheim',
-    'post-workspace-param':'workspace',
+    'post-url':'http://localhost:8080/kaartenbalie/files',
+    'post-username':'beheerder',
+    'post-password':'beheerder',
+    'post-workspace-param':'filename',
     'default-workspace':'b3p',
-    'sld-url':'http://example.org/gemeente/sld',
     'stroke-width-multiplier':3,
     'point-size-multiplier':8
 }
